@@ -10,18 +10,19 @@ body {
 
 /* Estilo del logo */
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     width: 120px; /* Tamaño más adaptable */
     height: auto;
+    margin-top: 20px; /* Espacio superior para separar del borde */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Para centrarlo */
 }
 
 /* Encabezado principal */
 h1 {
     color: #2c3e50;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 30px; /* Espacio entre el logo y el título */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -58,7 +59,6 @@ h1 {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efectos de hover y active */
 #menu a:hover {
     background-color: #3498db;
     transform: scale(1.05);
@@ -72,15 +72,18 @@ h1 {
 
 /* Para pantallas pequeñas (celulares) */
 @media screen and (max-width: 600px) {
+    body {
+        background-color: #e8f5e9; /* Verde claro */
+    }
+
     .logo {
         width: 90px; /* Logo más pequeño */
-        top: 10px;
-        left: 10px;
+        margin-top: 10px; /* Espacio superior */
     }
 
     h1 {
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 18px; /* Título más pequeño */
+        margin-top: 20px; /* Espacio entre el logo y el título */
     }
 
     #menu {
