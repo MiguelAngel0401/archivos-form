@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Fondo claro */
-    color: #333; /* Texto oscuro */
+    background-color: #f9f9f9;
+    color: #333;
     text-align: center;
 }
 
@@ -12,8 +12,8 @@ body {
 .logo {
     position: absolute;
     top: 20px;
-    left: 20px; /* Alineado a la izquierda */
-    width: 150px; /* Tamaño más grande del logo */
+    left: 20px;
+    width: 120px; /* Tamaño más adaptable */
     height: auto;
 }
 
@@ -21,7 +21,7 @@ body {
 h1 {
     color: #2c3e50;
     font-size: 25px;
-    margin-top: 50px; /* Elevar el título */
+    margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -29,7 +29,7 @@ h1 {
 /* Estilos del menú */
 #menu {
     background-color: #ffffff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -38,9 +38,9 @@ h1 {
 }
 
 #menu h3 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #34495e;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 
@@ -50,20 +50,80 @@ h1 {
     margin: 10px 0;
     text-decoration: none;
     font-size: 1.2em;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff;
     padding: 12px;
     border-radius: 8px;
-    background-color: #2980b9; /* Azul elegante */
+    background-color: #2980b9;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Efectos de hover y active */
 #menu a:hover {
-    background-color: #3498db; /* Azul más claro */
-    transform: scale(1.05); /* Zoom sutil */
+    background-color: #3498db;
+    transform: scale(1.05);
 }
 
 #menu a:active {
-    background-color: #1f648b; /* Azul más oscuro */
+    background-color: #1f648b;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* Para pantallas pequeñas (celulares) */
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 90px; /* Logo más pequeño */
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    #menu {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    #menu h3 {
+        font-size: 1.2em;
+    }
+
+    #menu a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+/* Para tablets (pantallas medianas) */
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    #menu h3 {
+        font-size: 1.4em;
+    }
+
+    #menu a {
+        font-size: 1.1em;
+    }
+}
+
+/* Para laptops y pantallas grandes */
+@media screen and (min-width: 1200px) {
+    #menu {
+        width: 50%;
+    }
 }
